@@ -1,0 +1,297 @@
+[gd_scene format=3 uid="uid://mhpurlc7aalx"]
+
+[ext_resource type="Texture2D" uid="uid://bpnvms7xyybpt" path="res://Content/Assets/particles.png" id="1_ukh5w"]
+[ext_resource type="FontFile" uid="uid://di3dbsk0elwfh" path="res://Content/Fonts/StampatelloFaceto.otf" id="2_b155q"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_b155q"]
+blend_mode = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ukh5w"]
+bg_color = Color(0, 0, 0, 0.7254902)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 0.70588875, 0.7753242, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+corner_detail = 10
+
+[sub_resource type="Gradient" id="Gradient_b155q"]
+offsets = PackedFloat32Array(0, 0.19951923, 0.30048078, 0.50721157, 0.6995192, 1)
+colors = PackedColorArray(0.9454145, 0.79422784, 1, 1, 0.770718, 0.47589892, 0.8618872, 1, 0.95814234, 0.80167663, 0.90185404, 1, 0.8924227, 0.4489388, 0.84267116, 1, 0.9352419, 0.61397827, 0.61869735, 1, 0.9046383, 0.37800646, 0.9061919, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_3l00r"]
+gradient = SubResource("Gradient_b155q")
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_ukh5w"]
+blend_mode = 1
+
+[sub_resource type="Curve" id="Curve_ukh5w"]
+_data = [Vector2(0, 0), 0.0, 1.873016, 0, 1, Vector2(0.5338983, 1), 1.873016, -2.1454546, 1, 1, Vector2(1, 0), -2.1071432, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Gradient" id="Gradient_3l00r"]
+colors = PackedColorArray(1.8247963, 1.1308756, 0.9376584, 1, 1, 0.55450225, 0.2347951, 1)
+
+[sub_resource type="Animation" id="Animation_b155q"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ColorRect:color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ColorRect2:color")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Control:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_3l00r"]
+resource_name = "new_animation"
+length = 2.0
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0.8)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ColorRect:color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.3, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.2584497, 0.10851728, 0.42094752, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ColorRect2:color")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.3, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 0.8)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Control:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.3, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_k2q2n"]
+_data = {
+&"RESET": SubResource("Animation_b155q"),
+&"new_animation": SubResource("Animation_3l00r")
+}
+
+[node name="reward_rect" type="Control" unique_id=639688218]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1285100333]
+modulate = Color(1, 1, 1, 0)
+material = SubResource("CanvasItemMaterial_b155q")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=363350445]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0)
+
+[node name="Control" type="Control" parent="." unique_id=128564939]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="button" type="Panel" parent="Control" unique_id=559842263]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(600, 220)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -235.0
+offset_top = -70.0
+offset_right = 235.0
+offset_bottom = 70.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ukh5w")
+
+[node name="Label3" type="RichTextLabel" parent="Control" unique_id=740165783]
+clip_children = 2
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -350.0
+offset_top = -60.0
+offset_right = 350.0
+offset_bottom = 60.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 25
+theme_override_fonts/normal_font = ExtResource("2_b155q")
+theme_override_font_sizes/normal_font_size = 58
+bbcode_enabled = true
+text = "[wave amp=30 freq=5]Получить подарок?[/wave]"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="RichTextLabel" parent="Control" unique_id=1092640636]
+clip_children = 2
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -350.0
+offset_top = -60.0
+offset_right = 350.0
+offset_bottom = 60.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("2_b155q")
+theme_override_font_sizes/normal_font_size = 58
+bbcode_enabled = true
+text = "[wave amp=30 freq=5]Получить подарок?[/wave]"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="Control/Label2" unique_id=640867652]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_3l00r")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="Control" unique_id=699310088]
+material = SubResource("CanvasItemMaterial_ukh5w")
+position = Vector2(0, 4)
+amount = 20
+texture = ExtResource("1_ukh5w")
+preprocess = 1.0
+local_coords = true
+emission_shape = 3
+emission_rect_extents = Vector2(320, 50)
+direction = Vector2(0, 0)
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 50.0
+initial_velocity_max = 50.0
+scale_amount_min = 0.5
+scale_amount_curve = SubResource("Curve_ukh5w")
+color_ramp = SubResource("Gradient_3l00r")
+
+[node name="LinkButton" type="LinkButton" parent="Control" unique_id=191105570]
+custom_minimum_size = Vector2(600, 180)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -300.0
+offset_top = -110.0
+offset_right = 300.0
+offset_bottom = 70.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_b155q")
+theme_override_font_sizes/font_size = 48
+underline = 2
+uri = "https://ga.gift/by/a19cf942eca34c40b5357b2a7ceda8da"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=506576402]
+libraries/ = SubResource("AnimationLibrary_k2q2n")
+autoplay = &"new_animation"

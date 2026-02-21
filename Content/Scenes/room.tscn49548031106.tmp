@@ -1,0 +1,403 @@
+[gd_scene format=3 uid="uid://dgmfqj1dtck5q"]
+
+[ext_resource type="Texture2D" uid="uid://50sn3yh7cxt8" path="res://Content/Assets/besokot_room_1.png" id="1_1gtbo"]
+[ext_resource type="Script" uid="uid://mmu0j2ia8f7" path="res://Content/Scripts/room.gd" id="1_ke84l"]
+[ext_resource type="Texture2D" uid="uid://b0jp4nn4ye33h" path="res://Content/Assets/besokot_body_1.png" id="2_g66a8"]
+[ext_resource type="Texture2D" uid="uid://q8es8m37vg00" path="res://Content/Assets/besokot_room_2.png" id="2_llgcm"]
+[ext_resource type="Texture2D" uid="uid://dxsb6mkpaok4t" path="res://Content/Assets/besokot_body_2.png" id="3_yqrkv"]
+[ext_resource type="Texture2D" uid="uid://bwa24i08kbkdo" path="res://Content/Assets/painting_2.png" id="4_27gp2"]
+[ext_resource type="Texture2D" uid="uid://didxlj8w50qot" path="res://Content/Assets/besokot_head_1.png" id="4_l647t"]
+[ext_resource type="Texture2D" uid="uid://c5tuvxpn11ca4" path="res://Content/Assets/bed_1.png" id="5_87ste"]
+[ext_resource type="Texture2D" uid="uid://b1jhjg0c2b6gy" path="res://Content/Assets/besokot_head_2.png" id="5_ovoi3"]
+[ext_resource type="Texture2D" uid="uid://ba53mp7b3nut8" path="res://Content/Assets/painting_1.png" id="5_phw1k"]
+[ext_resource type="Texture2D" uid="uid://dft2cklxu6ihs" path="res://Content/Assets/bed_2.png" id="6_hs4ed"]
+[ext_resource type="Texture2D" uid="uid://bv3j0saudrlmb" path="res://Content/Assets/besokot_face_1.png" id="6_n7g1b"]
+[ext_resource type="Texture2D" uid="uid://d2at32m1jfjrg" path="res://Content/Assets/besokot_face_2.png" id="7_obsdd"]
+[ext_resource type="Texture2D" uid="uid://b8m1e8e3nsbp" path="res://Content/Assets/flower_1.png" id="7_v7ho4"]
+[ext_resource type="Texture2D" uid="uid://630r57owtik3" path="res://Content/Assets/flower_2.png" id="8_ke84l"]
+[ext_resource type="Texture2D" uid="uid://bdubwk3r42eqq" path="res://Content/Assets/wardrobe_1.png" id="9_a6vge"]
+[ext_resource type="Texture2D" uid="uid://4vp64uu8yhu3" path="res://Content/Assets/wardrobe_2.png" id="10_1odu5"]
+[ext_resource type="Texture2D" uid="uid://f3qxf4oy60q1" path="res://Content/Assets/books_1.png" id="11_nfsba"]
+[ext_resource type="Texture2D" uid="uid://c0115vsp6mm2f" path="res://Content/Assets/books_2.png" id="12_f46us"]
+[ext_resource type="Texture2D" uid="uid://b38j8e02hc6qe" path="res://Content/Assets/calendar_1.png" id="13_v7ho4"]
+[ext_resource type="Texture2D" uid="uid://bqdjusuhy1o86" path="res://Content/Assets/calendar_2.png" id="14_ke84l"]
+[ext_resource type="AudioStream" uid="uid://bo8koasm3u7av" path="res://Content/Audio/universfield-muffled-sound-of-falling-game-character-131797.mp3" id="22_yqrkv"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_31tvu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_g66a8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_yqrkv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_stj1b"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_l647t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ovoi3")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_431hu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_n7g1b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_obsdd")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_27gp2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_1gtbo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_llgcm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_a6vge"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_v7ho4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_ke84l")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5ajd2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_phw1k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_27gp2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1mh10"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_87ste")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hs4ed")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g66a8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_v7ho4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ke84l")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yqrkv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_a6vge")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_1odu5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_l647t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_nfsba")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_f46us")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="Animation" id="Animation_yqrkv"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(540, 960)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_g66a8"]
+resource_name = "besokot_intro"
+length = 10.0
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(3.5, 4.5, 5.5),
+"transitions": PackedFloat32Array(0.17075512, 0.1250001, 0.1250001),
+"update": 0,
+"values": [Vector2(540, 960), Vector2(540, 310), Vector2(540, 960)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(3.4, 3.5, 5.5, 5.6),
+"transitions": PackedFloat32Array(0, 3.605001, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(0, 0, 0, 1), Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_yqrkv"]
+_data = {
+&"RESET": SubResource("Animation_yqrkv"),
+&"besokot_intro": SubResource("Animation_g66a8")
+}
+
+[node name="room" type="Control" unique_id=733291891]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ke84l")
+
+[node name="Control2" type="Control" parent="." unique_id=1144891010]
+visible = false
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.75, 0.75)
+
+[node name="Besokot_Body" type="AnimatedSprite2D" parent="Control2" unique_id=207264803]
+unique_name_in_owner = true
+position = Vector2(0, 61.5)
+sprite_frames = SubResource("SpriteFrames_31tvu")
+autoplay = "default"
+
+[node name="Besokot_Head" type="AnimatedSprite2D" parent="Control2" unique_id=1629351839]
+unique_name_in_owner = true
+sprite_frames = SubResource("SpriteFrames_stj1b")
+autoplay = "default"
+offset = Vector2(-2, -165)
+
+[node name="Besokot_Face" type="AnimatedSprite2D" parent="Control2/Besokot_Head" unique_id=51672041]
+unique_name_in_owner = true
+position = Vector2(0, 100.00003)
+sprite_frames = SubResource("SpriteFrames_431hu")
+autoplay = "default"
+offset = Vector2(-2, -165)
+
+[node name="Control" type="Control" parent="." unique_id=56040685]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Room" type="AnimatedSprite2D" parent="Control" unique_id=1620865433]
+unique_name_in_owner = true
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_27gp2")
+autoplay = "default"
+frame_progress = 0.20419002
+
+[node name="Calendar" type="AnimatedSprite2D" parent="Control" unique_id=1982112786]
+unique_name_in_owner = true
+position = Vector2(-76, -152)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_a6vge")
+autoplay = "default"
+
+[node name="calendar_button" type="Button" parent="Control/Calendar" unique_id=1045490032]
+unique_name_in_owner = true
+offset_left = -96.0
+offset_top = -182.0
+offset_right = 104.0
+offset_bottom = 144.0
+focus_mode = 0
+flat = true
+
+[node name="Painting" type="AnimatedSprite2D" parent="Control" unique_id=716075173]
+unique_name_in_owner = true
+position = Vector2(-259, -74)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_5ajd2")
+autoplay = "default"
+frame_progress = 0.07855782
+
+[node name="painting_button" type="Button" parent="Control/Painting" unique_id=1826866253]
+unique_name_in_owner = true
+offset_left = -40.0
+offset_top = -100.0
+offset_right = 88.0
+offset_bottom = 84.0
+focus_mode = 0
+flat = true
+
+[node name="Bed" type="AnimatedSprite2D" parent="Control" unique_id=2031459199]
+unique_name_in_owner = true
+position = Vector2(-255, 295)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_1mh10")
+autoplay = "default"
+
+[node name="bed_button" type="Button" parent="Control/Bed" unique_id=386916145]
+unique_name_in_owner = true
+offset_left = -417.85727
+offset_top = -34.961376
+offset_right = 2.9013977
+offset_bottom = 596.9804
+rotation = -1.0541788
+focus_mode = 0
+flat = true
+
+[node name="Flower" type="AnimatedSprite2D" parent="Control" unique_id=1995478364]
+unique_name_in_owner = true
+position = Vector2(26, -102)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_g66a8")
+autoplay = "default"
+
+[node name="flower_button" type="Button" parent="Control/Flower" unique_id=39762670]
+unique_name_in_owner = true
+offset_left = -100.0
+offset_top = -364.0
+offset_right = 126.0
+offset_bottom = 408.0
+focus_mode = 0
+flat = true
+
+[node name="Wardrobe" type="AnimatedSprite2D" parent="Control" unique_id=721323674]
+unique_name_in_owner = true
+position = Vector2(369, 137)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_yqrkv")
+autoplay = "default"
+
+[node name="wardrobe_button" type="Button" parent="Control/Wardrobe" unique_id=2076075817]
+unique_name_in_owner = true
+offset_left = -148.0
+offset_top = -358.0
+offset_right = 158.0
+offset_bottom = 366.0
+focus_mode = 0
+flat = true
+
+[node name="Books" type="AnimatedSprite2D" parent="Control" unique_id=1519068127]
+unique_name_in_owner = true
+position = Vector2(-283, -157)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_l647t")
+autoplay = "default"
+
+[node name="books_button" type="Button" parent="Control/Books" unique_id=1879638348]
+unique_name_in_owner = true
+offset_left = -239.1399
+offset_top = -148.91501
+offset_right = 240.11932
+offset_bottom = 76.57767
+rotation = -0.5497787
+focus_mode = 0
+flat = true
+
+[node name="Camera2D" type="Camera2D" parent="Control" unique_id=632799246]
+unique_name_in_owner = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=412934674]
+libraries/ = SubResource("AnimationLibrary_yqrkv")
+autoplay = &"besokot_intro"
+
+[node name="Node" type="Node" parent="." unique_id=1157324156]
+
+[node name="object_sfx" type="AudioStreamPlayer" parent="Node" unique_id=1354577498]
+unique_name_in_owner = true
+stream = ExtResource("22_yqrkv")
+
+[connection signal="pressed" from="Control/Calendar/calendar_button" to="." method="_on_calendar_button_pressed"]
+[connection signal="pressed" from="Control/Painting/painting_button" to="." method="_on_painting_button_pressed"]
+[connection signal="pressed" from="Control/Bed/bed_button" to="." method="_on_bed_button_pressed"]
+[connection signal="pressed" from="Control/Flower/flower_button" to="." method="_on_flower_button_pressed"]
+[connection signal="pressed" from="Control/Wardrobe/wardrobe_button" to="." method="_on_wardrobe_button_pressed"]
+[connection signal="pressed" from="Control/Books/books_button" to="." method="_on_books_button_pressed"]

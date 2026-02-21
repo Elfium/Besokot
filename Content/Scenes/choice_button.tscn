@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://b6r7202qxmsch"]
+
+[ext_resource type="FontFile" uid="uid://di3dbsk0elwfh" path="res://Content/Fonts/StampatelloFaceto.otf" id="1_h6cdh"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4ha6i"]
+bg_color = Color(0, 0, 0, 0.7254902)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 0.70588875, 0.7753242, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_detail = 10
+
+[node name="choice_button" type="Button" unique_id=828030130]
+custom_minimum_size = Vector2(470, 140)
+offset_right = 255.0
+offset_bottom = 93.0
+theme_override_fonts/font = ExtResource("1_h6cdh")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_4ha6i")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4ha6i")
+theme_override_styles/hover = SubResource("StyleBoxFlat_4ha6i")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_4ha6i")
+theme_override_styles/focus = SubResource("StyleBoxFlat_4ha6i")
