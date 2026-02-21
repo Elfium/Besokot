@@ -1,0 +1,82 @@
+[gd_scene format=3 uid="uid://c1knxllyv6ewh"]
+
+[ext_resource type="Script" uid="uid://btkj47mtt6uyg" path="res://Content/Scripts/main.gd" id="1_g25lu"]
+[ext_resource type="PackedScene" uid="uid://dgmfqj1dtck5q" path="res://Content/Scenes/room.tscn" id="1_m3as6"]
+[ext_resource type="Texture2D" uid="uid://bpnvms7xyybpt" path="res://Content/Assets/particles.png" id="1_n6riq"]
+[ext_resource type="PackedScene" uid="uid://bcl6wqwtfmmm7" path="res://Content/Scenes/dialog_box.tscn" id="3_wqchk"]
+
+[sub_resource type="Curve" id="Curve_wqchk"]
+_data = [Vector2(0, 0), 0.0, 2.4466875, 0, 0, Vector2(0.5, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), -2.2279446, 0.0, 0, 0]
+point_count = 3
+metadata/_snap_enabled = true
+
+[node name="main" type="Control" unique_id=248008680]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_g25lu")
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=1322977664]
+layer = -30
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer2" unique_id=1166714994]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.06249999, 0.045, 0.15, 1)
+
+[node name="Control" type="Control" parent="." unique_id=229772375]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="Control" unique_id=1718370766]
+amount = 20
+texture = ExtResource("1_n6riq")
+lifetime = 2.0
+preprocess = 2.0
+emission_shape = 3
+emission_rect_extents = Vector2(540, 960)
+direction = Vector2(0, -1)
+spread = 0.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 25.0
+initial_velocity_max = 50.0
+angular_velocity_min = -45.0
+angular_velocity_max = 45.0
+scale_amount_curve = SubResource("Curve_wqchk")
+color = Color(1, 0.92017245, 0.7796379, 1)
+
+[node name="room" parent="." unique_id=733291891 instance=ExtResource("1_m3as6")]
+unique_name_in_owner = true
+layout_mode = 1
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=983603056]
+
+[node name="dialog_box" parent="CanvasLayer" unique_id=34682929 instance=ExtResource("3_wqchk")]
+unique_name_in_owner = true
+
+[node name="Blackout" type="ColorRect" parent="CanvasLayer" unique_id=1498569952]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0)
+z_index = 64
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[editable path="CanvasLayer/dialog_box"]

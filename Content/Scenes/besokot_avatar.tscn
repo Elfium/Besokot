@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://bv3lh0x2jhtiy"]
+
+[ext_resource type="Texture2D" uid="uid://b0jp4nn4ye33h" path="res://Content/Assets/besokot_body_1.png" id="1_peucr"]
+[ext_resource type="Texture2D" uid="uid://dxsb6mkpaok4t" path="res://Content/Assets/besokot_body_2.png" id="2_wetok"]
+[ext_resource type="Texture2D" uid="uid://didxlj8w50qot" path="res://Content/Assets/besokot_head_1.png" id="3_4yvao"]
+[ext_resource type="Texture2D" uid="uid://b1jhjg0c2b6gy" path="res://Content/Assets/besokot_head_2.png" id="4_b063f"]
+[ext_resource type="Texture2D" uid="uid://bv3j0saudrlmb" path="res://Content/Assets/besokot_face_1.png" id="5_20xi4"]
+[ext_resource type="Texture2D" uid="uid://d2at32m1jfjrg" path="res://Content/Assets/besokot_face_2.png" id="6_8vb8o"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_20xi4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_peucr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wetok")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4yvao"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_4yvao")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_b063f")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7r4nm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_20xi4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_8vb8o")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[node name="besokot_avatar" type="Control" unique_id=1273520925]
+custom_minimum_size = Vector2(380, 360)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -700.0
+offset_bottom = -1560.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="Control" parent="." unique_id=971105745]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Control" unique_id=2109710437]
+position = Vector2(0, 61.5)
+sprite_frames = SubResource("SpriteFrames_20xi4")
+autoplay = "default"
+frame_progress = 0.91450906
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Control" unique_id=1607104849]
+position = Vector2(2, 55.5)
+sprite_frames = SubResource("SpriteFrames_4yvao")
+autoplay = "default"
+frame_progress = 0.24021882
+offset = Vector2(-2, -165)
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="Control" unique_id=297611082]
+position = Vector2(2, 158)
+sprite_frames = SubResource("SpriteFrames_7r4nm")
+autoplay = "default"
+frame_progress = 0.7486357
+offset = Vector2(-2, -165)
