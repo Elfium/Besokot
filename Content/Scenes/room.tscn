@@ -21,7 +21,7 @@
 [ext_resource type="Texture2D" uid="uid://c0115vsp6mm2f" path="res://Content/Assets/books_2.png" id="12_f46us"]
 [ext_resource type="Texture2D" uid="uid://b38j8e02hc6qe" path="res://Content/Assets/calendar_1.png" id="13_v7ho4"]
 [ext_resource type="Texture2D" uid="uid://bqdjusuhy1o86" path="res://Content/Assets/calendar_2.png" id="14_ke84l"]
-[ext_resource type="AudioStream" uid="uid://bo8koasm3u7av" path="res://Content/Audio/universfield-muffled-sound-of-falling-game-character-131797.mp3" id="22_yqrkv"]
+[ext_resource type="AudioStream" uid="uid://baa7nuhkrgwb2" path="res://Content/Audio/universfield-muffled-sound-of-falling-game-character-131797.mp3" id="22_yqrkv"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_31tvu"]
 animations = [{

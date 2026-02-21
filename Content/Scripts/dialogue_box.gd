@@ -9,8 +9,6 @@ extends Control
 @onready var choice_container: VBoxContainer = %choice_container
 @onready var dialogue_sfx: AudioStreamPlayer = %dialogue_sfx
 @onready var dialogue_click: AudioStreamPlayer = %dialogue_click
-@onready var loose_sfx: AudioStreamPlayer = %loose_sfx
-@onready var win_sfx: AudioStreamPlayer = %win_sfx
 @onready var harp_sfx: AudioStreamPlayer = %harp_sfx
 
 

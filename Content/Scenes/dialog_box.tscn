@@ -8,9 +8,9 @@
 [ext_resource type="Texture2D" uid="uid://b1jhjg0c2b6gy" path="res://Content/Assets/besokot_head_2.png" id="5_o3a3k"]
 [ext_resource type="Texture2D" uid="uid://bv3j0saudrlmb" path="res://Content/Assets/besokot_face_1.png" id="6_cei2d"]
 [ext_resource type="Texture2D" uid="uid://d2at32m1jfjrg" path="res://Content/Assets/besokot_face_2.png" id="7_o3a3k"]
-[ext_resource type="AudioStream" uid="uid://dt65fiof47pc1" path="res://Content/Audio/47313572-ui-pop-sound-316482(1).mp3" id="10_fsudu"]
-[ext_resource type="AudioStream" uid="uid://ht7xbsdp10kx" path="res://Content/Audio/dialogue_sfx.mp3" id="12_uqnfe"]
-[ext_resource type="AudioStream" uid="uid://bwr4877rrx73q" path="res://Content/Audio/harp_sfx.mp3" id="13_uqnfe"]
+[ext_resource type="AudioStream" uid="uid://b5rjt5wsm6u2n" path="res://Content/Audio/creatorshome-video-game-speak-358238_wYLCHPaB.mp3" id="9_1hea8"]
+[ext_resource type="AudioStream" uid="uid://c817ytwaakf56" path="res://Content/Audio/47313572-ui-pop-sound-316482(1).mp3" id="10_fsudu"]
+[ext_resource type="AudioStream" uid="uid://drf1gggg3ldqd" path="res://Content/Audio/ribhavagrawal-angelic-harp-sound-effect-type-02-294199.mp3" id="11_1hea8"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_20xi4"]
 animations = [{
@@ -327,7 +327,7 @@ alignment = 2
 
 [node name="dialogue_sfx" type="AudioStreamPlayer" parent="Node" unique_id=1488964991]
 unique_name_in_owner = true
-stream = ExtResource("12_uqnfe")
+stream = ExtResource("9_1hea8")
 volume_db = -12.0
 
 [node name="dialogue_click" type="AudioStreamPlayer" parent="Node" unique_id=253520709]
@@ -336,7 +336,7 @@ stream = ExtResource("10_fsudu")
 
 [node name="harp_sfx" type="AudioStreamPlayer" parent="Node" unique_id=904527437]
 unique_name_in_owner = true
-stream = ExtResource("13_uqnfe")
+stream = ExtResource("11_1hea8")
 pitch_scale = 1.4
 
 [connection signal="pressed" from="Panel/HBoxContainer/Control2/MarginContainer/VBoxContainer/Panel3/dialogue_button" to="." method="_on_dialogue_button_pressed"]
